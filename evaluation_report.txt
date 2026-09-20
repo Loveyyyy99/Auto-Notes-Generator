@@ -1,0 +1,89 @@
+======================================================================
+COMPREHENSIVE EVALUATION REPORT
+Auto-Notes Generation System
+======================================================================
+
+1. REGRESSION MODEL (Summary Length Prediction)
+----------------------------------------------------------------------
+     Split     RMSE      MAE        R²
+     Train 0.657445 0.569787  0.021088
+Validation 0.636095 0.551443  0.052010
+      Test 0.725453 0.617332 -0.001843
+
+2. SENTENCE CLASSIFICATION MODEL
+----------------------------------------------------------------------
+Model: RandomForestClassifier
+Threshold: 0.340
+
+Test Set Performance:
+  Accuracy:  0.7789
+  Precision: 0.2869
+  Recall:    0.4851
+  F1-Score:  0.3606
+
+3. ROUGE SCORES (Summary Quality)
+----------------------------------------------------------------------
+              Summary Type  ROUGE-1  ROUGE-2  ROUGE-L
+        Abstractive (BART) 0.347851 0.152425 0.260127
+ Extractive (Classical ML) 0.294936 0.108069 0.203214
+Improved (Extractive→BART) 0.330339 0.135172 0.234925
+
+Best Performing Methods:
+  ROUGE-1: Abstractive (BART) (0.3479)
+  ROUGE-2: Abstractive (BART) (0.1524)
+  ROUGE-L: Abstractive (BART) (0.2601)
+
+4. SUMMARY STATISTICS
+----------------------------------------------------------------------
+Summary Type  Avg Length  Std Length  Compression Ratio
+ Abstractive       52.81    6.330454          10.309381
+  Extractive       57.41   21.490940          12.286142
+    Improved       54.22    6.148959           9.999257
+
+5. SAMPLE OUTPUTS (First 3 Test Examples)
+----------------------------------------------------------------------
+
+Example 1:
+--------------------------------------------------
+REFERENCE:
+Membership gives the ICC jurisdiction over alleged crimes committed in Palestinian territories since last June . Israel and the United States opposed the move, which could open the door to war crimes investigations against Israelis ....
+
+ABSTRACTIVE:
+The Palestinian Authority becomes the 123rd member of the International Criminal Court. The move gives the court jurisdiction over alleged crimes in Palestinian territories. Israel and the United States opposed the Palestinians' efforts to join the body. But Palestinian Foreign Minister Riad al-Malk...
+
+EXTRACTIVE:
+(CNN)The Palestinian Authority officially became the 123rd member of the International Criminal Court on Wednesday, a step that gives the court jurisdiction over alleged crimes in Palestinian territories. The formal accession was marked with a ceremony at The Hague, in the Netherlands, where the cou...
+
+IMPROVED:
+The Palestinian Authority officially became the 123rd member of the International Criminal Court on Wednesday. The formal accession was marked with a ceremony at The Hague, in the Netherlands, where the court is based. The Palestinians signed the ICC's founding Rome Statute in January, when they als...
+
+
+Example 2:
+--------------------------------------------------
+REFERENCE:
+Theia, a bully breed mix, was apparently hit by a car, whacked with a hammer and buried in a field . "She's a true miracle dog and she deserves a good life," says Sara Mellado, who is looking for a home for Theia ....
+
+ABSTRACTIVE:
+Theia, a one-year-old bully breed mix, was hit by a car and buried in a field. Four days after her apparent death, the dog managed to stagger to a nearby farm. She suffered a dislocated jaw, leg injuries and a caved-in sinus cavity. Theia is not the only animal to apparently rise from the grave....
+
+EXTRACTIVE:
+(CNN)Never mind cats having nine lives. That's according to Washington State University, where the dog -- a friendly white-and-black bully breed mix now named Theia -- has been receiving care at the Veterinary Teaching Hospital. I agreed to foster her until she finally found a loving home."...
+
+IMPROVED:
+Theia was hit by a car, apparently whacked on the head with a hammer and buried in a field. Four days after her apparent death, the dog managed to stagger to a nearby farm. She suffered a dislocated jaw, leg injuries and a caved-in sinus cavity. A fundraising page has already surpassed the $10,000 t...
+
+
+Example 3:
+--------------------------------------------------
+REFERENCE:
+Mohammad Javad Zarif has spent more time with John Kerry than any other foreign minister . He once participated in a takeover of the Iranian Consulate in San Francisco . The Iranian foreign minister tweets in English ....
+
+ABSTRACTIVE:
+Mohammad Javad Zarif is the Iranian foreign minister. He has been John Kerry's opposite number in securing a breakthrough in nuclear discussions. He received a hero's welcome as he arrived in Iran on a sunny Friday morning. But there are some facts about Zarif that are less well-known....
+
+EXTRACTIVE:
+The aim, says the website Iranian.com -- which cites Zarif's memoirs, titled "Mr. An Internet search for "Mohammad Javad Zarif" and "jovial" yields thousands of results. And the Iranian Diplomacy website says he was born in in 1961 . "Long live Zarif," crowds chanted as his car rolled slowly down th...
+
+IMPROVED:
+Mohammad Javad Zarif is the Iranian foreign minister. He has been U.S. Secretary of State John Kerry's opposite number in securing a breakthrough in nuclear discussions. He received a hero's welcome as he arrived in Iran on a sunny Friday morning. But there are some facts about Zarif that are less w...
+
