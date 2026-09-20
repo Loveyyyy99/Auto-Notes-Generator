@@ -8,11 +8,8 @@ A Next.js 14 (App Router + TypeScript + Tailwind) rebuild of the original landin
   Suggested size: 1200x600
   =========================================================
 -->
-<p align="center">
-  <br><br><br><br><br><br><br><br>
-  <em>[ Add a hero screenshot of the app here ]</em>
-  <br><br><br><br><br><br><br><br>
-</p>
+<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/6d4b9b8d-3792-4c6d-8d93-ca9fc8545014" />
+
 
 ---
 
@@ -66,46 +63,28 @@ Nothing on the results page is hardcoded — word counts and the compression rat
 <!--
   SCREENSHOT: Landing page (/ ) — hero, real ROUGE numbers from evaluation_report.txt
 -->
-<p align="center">
-  <br><br><br><br><br><br><br><br><br><br>
-  <em>[ Add landing page screenshot here ]</em>
-  <br><br><br><br><br><br><br><br><br><br>
-</p>
+<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/6d4b9b8d-3792-4c6d-8d93-ca9fc8545014" />
+<img width="1918" height="907" alt="image" src="https://github.com/user-attachments/assets/e39a7a41-823d-4e70-83cc-eb024338435a" />
+<img width="1918" height="910" alt="image" src="https://github.com/user-attachments/assets/b01c67c2-1200-43a0-92a0-619ac95aea82" />
+
 
 ### 📤 Upload Page
 
 <!--
   SCREENSHOT: Upload page (/upload) — youtube_url / output_language / audio_language form
 -->
-<p align="center">
-  <br><br><br><br><br><br><br><br><br><br>
-  <em>[ Add upload page screenshot here ]</em>
-  <br><br><br><br><br><br><br><br><br><br>
-</p>
+<img width="1918" height="910" alt="image" src="https://github.com/user-attachments/assets/742f62a7-bf55-4a63-b305-28525664490f" />
+
 
 ### 📊 Results Page
 
 <!--
   SCREENSHOT: Results page (/results) — tabs for Abstractive / Hybrid / Extractive, stats, transcript accordion
 -->
-<p align="center">
-  <br><br><br><br><br><br><br><br><br><br>
-  <em>[ Add results page screenshot here ]</em>
-  <br><br><br><br><br><br><br><br><br><br>
-</p>
-
-### 🌐 Language Toggle (EN / HI)
-
-<!--
-  SCREENSHOT: English/Hindi toggle in action on the results page
--->
-<p align="center">
-  <br><br><br><br><br><br>
-  <em>[ Add language toggle screenshot here ]</em>
-  <br><br><br><br><br><br>
-</p>
-
----
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/84444f28-4ee0-463a-8b96-322f13ee73b6" />
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/fcb2098b-0ab5-4cb2-a98c-29f8d08211c9" />
+<img width="1917" height="910" alt="image" src="https://github.com/user-attachments/assets/bc57bddf-e5d0-46e2-b882-44d36033c452" />
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/9268e6ac-23e7-4525-ad3f-2e6376888d4e" />
 
 ## Running the Frontend
 
